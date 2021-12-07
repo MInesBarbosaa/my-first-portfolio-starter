@@ -14,6 +14,7 @@
 
 ul li {
   list-style-type: none;
+  display: inline-block;
 }
 
 ul {
@@ -42,6 +43,214 @@ h2 {
   font-size: 48px;
 }
 
+
+.header-content{
+  width: 100%;
+  height: 56px;
+  background-color: #928DF1;
+  display: block;
+  position: relative;
+  }
+
+.header-logo img{
+  height: 75%;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 120px;
+}
+
+.header-links{
+  float: right;
+  margin-right: 120px;
+  }
+
+  .header-links li{
+  padding: 0px 20px;
+  margin-top: 14px;
+  }
+
+  .header-links li a{
+  color: white;
+  }
+
+
+.heading{
+  position: relative;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin-bottom: 58px;
+  text-align: center;
+}
+
+
+
+/* Pseudo Elemento: adicionar barrinha em baixo dos headings*/
+.heading:after{
+  content: " "; /*Sem conteudo*/
+  position: absolute; /* absoluto em relação ao heading que está em relative (elemento pai)*/
+  top: 100%;
+  left: 50%;
+  width: 100px;
+  /*border: 2px solid var(--color-text-secondary);  tambem podia ser definido com o codigo de cores: border: 2px solid #FDC435;*/
+  border: 2px solid #FDC435;
+  transform: translateX(-50%); /* Para centrar */
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.01);
+}
+
+.row.intro{
+  margin-bottom: 240px;
+}
+
+.title{
+  padding-top: 100px;
+}
+
+.intro-text{
+  width: 380px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+  line-height: 36px;
+  font-size: 20px;
+}
+
+span{
+  color: #928DF1;
+  font-size: 38px;
+}
+
+
+.button-primary{
+  border-radius: 8px;
+  margin-bottom: 190px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: #FDC435;
+  color: black;
+  border: none;
+  font-size: 24px;
+  margin-right: 36px;
+  }
+
+
+.button-secondary{
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 25px;
+  padding-right: 20px;
+  text-align: center;
+  background-color: white;
+  color: #928DF1;
+  font-size: 24px;
+  border: 2px solid #928DF1;
+  }
+
+
+
+
+.intro-img{
+  padding-top: 100px;
+}
+
+
+.row.about{
+  margin-bottom: 180px;
+}
+
+.about-img img{
+  border: 5px solid #928DF1;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  margin-left: 100px;
+  }
+
+.about-text{
+  font-size: 20px;
+  width: 480px;
+ }
+
+
+
+
+ .projects h2{
+  margin-bottom: 95px;
+  }
+
+ .projects img{
+  width: 350px;
+  height: 230px;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+ }
+
+ .project-card-content{
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 0 1em lightgray;
+    height: 350px;
+    margin-bottom: 250px;
+ }
+
+ .project-card-title{
+  padding-top: 39px;
+  margin-left: 35px;
+  margin-bottom: 39px;
+ }
+
+ .project-card-text{
+  width: 250px;
+  margin-top: 39px;
+  margin-left: 35px;
+  margin-bottom: 50px;
+  margin-right: 23px;
+ }
+
+.button.button-secondary-rounded{
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  border: 0.5px solid mediumpurple;
+  border-radius: 25px;
+  margin-left: 35px;
+  }
+
+
+.social{
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px 15px;
+  transition: 0.3s ease 0s;
+}
+
+.social:hover{
+  box-shadow: 8px 11px 3px cornsilk;
+  transform: translateY(-7px);
+}
+
 .instagram {
-  background-image: url('assets/social/github.png');
+  background-image: url('assets/social/instagram.png');
+}
+
+.github{
+  background-image: url(assets/social/github.png);
+}
+
+.footer{
+  background-image: url("assets/footer.png");
+  background-size: cover; /*Ocupar todo o espaço do footer*/
+  background-repeat: no-repeat; /* Não se repita*/
+  background-position: top left;
+  height: 350px;
+  margin: 0 !important; /* Tirar a margem e o important nao deve ser usado frequentemente, so quando nao queremos mesmo que nao se sobreponha*/
 }
